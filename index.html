@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./style/style.css">
+    <!--Media Query-->
+    <link rel="stylesheet" href="./style/media.css">
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+    <title>Buy Pepsi</title>
+</head>
+<body>
+    <section class="sec">
+        <!--Header with logo and menu-->
+        <header>
+            <a href="#"><img src="./img/logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <!--Content in this div-->
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ea hic voluptatem, assumenda quam atque optio placeat provident, impedit magni molestiae? Corporis id sint dolores vel tenetur cupiditate incidunt sit?</p>
+                <a href="#">View All Products</a>
+            </div>
+            <!--Pepsi image here-->
+            <div class="imgBox">
+                <img src="./img/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <!--OnClick function in JavaScript-->
+        <!--If you click, change the image and background.-->
+        <ul class="thumb">
+           <li><img src="./img/pepsi001.png" onclick="imgSlider('./img/pepsi001.png');changeBgColor('#0062be')"></li> 
+           <li><img src="./img/pepsi002.png" onclick="imgSlider('./img/pepsi002.png'); changeBgColor('#e60c2c')"></li> 
+           <li><img src="./img/pepsi003.png" onclick="imgSlider('./img/pepsi003.png');changeBgColor('#1e1e1e')"></li> 
+        </ul>
+        <!--Social-->
+        <ul class="sci">
+            <li><a href="#" id="social"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#" id="social"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#" id="social"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </section>
+    <!--JavaScript Program-->
+    <script src="./js/index.js"></script>
+</body>
+</html>
