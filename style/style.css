@@ -131,8 +131,8 @@ content .imgBox img{
     transform: scale(0.6);
     
 }
-.sci li{
+.sci li a i{
     font-size: 40px;
-    color: #fff;
+    color: white;
     list-style: none;
 }
