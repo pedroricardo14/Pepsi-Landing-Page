@@ -1,3 +1,6 @@
 @media (max-width: 600px){
-    
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
 }
