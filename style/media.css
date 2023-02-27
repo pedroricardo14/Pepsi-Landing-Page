@@ -1,7 +1,27 @@
 @media (max-width: 600px){
-    .content{
+    header{
         display: flex;
         flex-direction: column;
     }
-    
+    .logo{
+        right: 0;
+    }
+    .content{
+        margin-top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .imgBox img{
+        height: 200px;
+        
+    }
 }

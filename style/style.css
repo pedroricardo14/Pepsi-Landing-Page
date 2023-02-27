@@ -124,10 +124,12 @@ content .imgBox img{
     align-items: center;
     flex-direction: column;
 }
+.sci li{
+    list-style: none;
+}
 .sci li a{
     display: inline-block;
     filter: invert(1);
     margin: 5px 0;
     transform: scale(0.6);
-    
 }
