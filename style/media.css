@@ -1,13 +1,27 @@
 @media (max-width: 600px){
+    body{
+        margin: 0;
+    }
     header{
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
-    .logo{
-        right: 0;
+    header img{
+        display: flex;
+        left: 0;
+    }
+    header ul{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1rem 2rem 0 0;
+    }
+    header ul li{
+        margin: 10px;
     }
     .content{
-        margin-top: 50%;
+        margin-top: 220px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,5 +37,11 @@
     .imgBox img{
         height: 200px;
         
+    }
+    .content .textBox h2{
+        font-size: 3.5em;
+    }
+    .sci{
+        display: none;
     }
 }
