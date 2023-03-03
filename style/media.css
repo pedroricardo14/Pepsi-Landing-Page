@@ -1,24 +1,31 @@
 @media (max-width: 600px){
     body{
         margin: 0;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
         padding: 0;
     }
-    header img{
+    
+    
+    header, nav{
+        margin: 0;
+        padding: 0;
         display: flex;
-        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
     }
     header ul{
-        align-items: center;
-        justify-content: center;
+        display: flex;
         flex-direction: column;
-        margin: 1rem 2rem 0 0;
     }
-    header ul li{
-        margin: 10px;
+    .logo{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 20px 0 0 40px;
+        width: 100%;
+    }
+    .logotype{
+        max-width: 80px;
     }
     .content{
         margin-top: 220px;
@@ -32,6 +39,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        margin: 0 0 3rem 3rem;
        
     }
     .imgBox img{

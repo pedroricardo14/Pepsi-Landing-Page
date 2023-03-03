@@ -16,7 +16,7 @@ section{
     background: #0062be;
     transition: 0.5s;
 }
-header{
+header, nav{
     position: absolute;
     top: 0;
     left: 0;
@@ -26,9 +26,10 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-header .logo{
+header a .logo{
     position: relative;
     max-width: 80px;
+    left:0;
 }
 header ul{
     position: relative;
