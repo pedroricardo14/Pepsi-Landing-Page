@@ -1,25 +1,34 @@
 @media (max-width: 600px){
+    *{
+        
+    }
     body{
         margin: 0;
         padding: 0;
-    }
-    
-    
-    header, nav{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: 300px;
     }
     
+    .sec{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    #nav{
+        height: 120px;
+        display: flex;
+        height: 150px;
+        justify-content: space-between;
+    }
     .logo{
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        margin: 20px 0 0 40px;
-        width: 100%;
+        
     }
     .logotype{
         max-width: 80px;
@@ -72,7 +81,7 @@
     }
     /*Definir ainda o nav.active com outra animação sem ser aquele x*/
     .content{
-        margin-top: 220px;
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -89,6 +98,10 @@
     .imgBox img{
         height: 200px;
         
+    }
+    .content{
+        padding: 0;
+        margin-top: auto;
     }
     .content .textBox h2{
         font-size: 3.5em;
