@@ -5,11 +5,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+header{
+    width: 100%;
+}
+.sec, body{
+    background-color: #0062be;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 section{
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    padding: 100px;
+    padding:  0 100px 100px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,11 +25,9 @@ section{
     transition: 0.5s;
 }
 header, nav{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +35,6 @@ header, nav{
 header a .logo{
     position: relative;
     max-width: 80px;
-    left:0;
 }
 header ul{
     position: relative;
