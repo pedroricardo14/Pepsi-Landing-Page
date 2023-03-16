@@ -37,10 +37,23 @@
     }
     
     .logotype{
-        max-width: 80px;
+        max-width: 65px;
     }
     #btn-mobile{
         display: block;
+    }
+    #btn-mobile i::before{
+        display: none;
+    }
+    #btn-mobile i::after{
+        display: flex;
+    }
+    #nav.active i{
+        display: flex;
+    }
+    #btn-mobile i{
+        font-size: 35px;
+        color: #fff;
     }
     #menu{
         display: block;
