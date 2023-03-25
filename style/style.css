@@ -38,10 +38,15 @@ header a .logo{
 }
 header ul{
     position: relative;
+    transform: translateY(-50%);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header ul li{
     list-style: none;
+    transition: 0.5s;
+    font-size: 30px;
 }
 header ul li:hover{
     transform: translateY(-15px);
@@ -53,6 +58,7 @@ header ul li a{
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+    transform: scale(0.6);
 }
 #btn-mobile{
     display: none;
