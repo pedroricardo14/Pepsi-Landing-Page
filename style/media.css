@@ -1,143 +1,102 @@
-@media (max-width: 600px){
-    body{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .sec{
-        width: 100%;
+@media (max-width: 800px){
+    section{
+        padding: 40px;
+        padding-bottom: 140px;
     }
     header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        
+       padding: 20px 40px; 
     }
-    .sec{
-        padding: 0;
-    }
-    .content{
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-    }
-    #nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #menu{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .logotype{
-        max-width: 65px;
-    }
-    #btn-mobile{
-        display: block;
-    }
-    #btn-mobile i::before{
-        display: none;
-    }
-    #btn-mobile i::after{
-        display: flex;
-    }
-    #nav.active i{
-        display: flex;
-    }
-    #btn-mobile i{
-        font-size: 35px;
-        color: #fff;
-    }
-    #menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0;
-        background: blue;
-        height: 0;
-        z-index: 1000;
-        transition: .6s;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-    #nav.active #menu{
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-        background: blue;
-        position: absolute;
-    }
-    #btn-mobile{
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-    }
-    #hamburguer{
-        border-top: 2px solid white;
-        width: 20px;
-    }
-    #hamburguer::after, #hamburguer::before{
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: white;
-        margin-top: 5px;
-        transition: 0.3s;
+    header .logo{
         position: relative;
+        max-width: 60px;
     }
-    /*Definir ainda o nav.active com outra animação sem ser aquele x*/
-    .content{
-        margin-top: 100px;
-        display: flex;
+    header ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
     }
-    
-    .imgBox{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 0 3rem 3rem;
-        padding: 0;
-       
+    header ul.active{
+        visibility: visible;
+        opacity: 1;
     }
-    .imgBox img{
-        height: 200px;
-        
+    header ul li a{
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
     }
-    .thumb{
-        bottom: -90px;
+    header ul li a:hover{
+        color: #ed0223;
+    }
+    .toggleMenu{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .toggleMenu.active{
+        background: url(../img/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        filter: invert(1);
     }
     .content{
-        padding: 0;
-        margin-top: auto;
-        display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-top: 80px;
+    }
+    .content .textBox{
+        position: relative;
+        max-width: 100%;
+        padding-right: 20px;
     }
     .content .textBox h2{
-        font-size: 3.5em;
-        text-align: center;
+        font-size: 3em;
     }
-    .content a{
-        margin: 0 0 0 40px;
+    .content .textBox a{
+        margin-top: 14px;
+        padding: 8px 15px;
+    }
+    .content .imgBox{
+        width: 100%;
+        display: flex;
+        padding-right: 0;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .content .imgBox img{
+        max-width: 150px;
+    }
+    .thumb li img{
+        max-width: 30px;
     }
     .sci{
-        display: none;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50px;
+        background: rgba(0,0,0,0.2);
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
