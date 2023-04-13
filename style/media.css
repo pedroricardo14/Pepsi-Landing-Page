@@ -1,4 +1,7 @@
 @media (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
     section{
         padding: 40px;
         padding-bottom: 140px;
